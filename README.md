@@ -26,7 +26,7 @@ npm run build
 ```
 
 
-Render.com link: 
+Render.com link: https://lab-5-1qrj.onrender.com/
 
 
 API ENDPOINTS
