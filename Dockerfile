@@ -11,7 +11,7 @@ ENV NODE_ENV=production
 ENV SERVE_STATIC=true
 ENV PORT=80
 COPY package*.json ./
-RUN npm install --silent
+RUN npm install --omit=dev --silent
 COPY --from=build /app/build ./build
 COPY --from=build /app/public ./public
 COPY --from=build /app/scripts/api-server.mjs ./scripts/api-server.mjs
